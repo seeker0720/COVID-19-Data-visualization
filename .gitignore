@@ -1,2 +1,6 @@
 env/
 update_data.py
+*.html
+!COVID-19疫情动态图(cn当日累计确诊病例数)DEMO.html  
+!COVID-19疫情动态图(cn当日现有确诊病例数)DEMO.html
+
