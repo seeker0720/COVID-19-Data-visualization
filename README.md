@@ -52,5 +52,5 @@ pip install -r requirements.txt
 
 ---
 
-项目所用的数据来源于丁香园网站发布的数据，如果需要，请查看该项目[DXY-COVID-19-Data](github.com:BlankerL/DXY-COVID-19-Data.git)
+项目所用的数据来源于丁香园网站发布的数据，如果需要，请查看该项目[DXY-COVID-19-Data]( https://github.com/BlankerL/DXY-COVID-19-Data )
 
