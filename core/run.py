@@ -32,10 +32,21 @@ def timer(func):
 def main():
     now_confirm_map = get_figure.province_map(label_name='现有确诊', column_name='now_confirm')
     now_confirm_map.render(f'{BASE_DIR}{os.sep}output{os.sep}COVID-19疫情动态图(cn当日现有确诊病例数).html')
+    
     total_confirm_map = get_figure.province_map(label_name='累计确诊', column_name='confirm')
     total_confirm_map.render(f'{BASE_DIR}{os.sep}output{os.sep}COVID-19疫情动态图(cn当日累计确诊病例数).html')
     
+    cn_area_total_confirm_line = get_figure.area_line(label_name='累计确诊', column_name='confirm')
+    cn_area_total_confirm_line.render(f'{BASE_DIR}{os.sep}output{os.sep}COVID-19各地区病例趋势图(cn当日累计确诊病例).html')
     
+    cn_area_now_confirm_line = get_figure.area_line(label_name='现有确诊', column_name='now_confirm')
+    cn_area_now_confirm_line.render(f'{BASE_DIR}{os.sep}output{os.sep}COVID-19各地区病例趋势图(cn当日现有确诊病例).html')
+
+    cn_area_heal_line = get_figure.area_line(label_name='累计治愈', column_name='heal')
+    cn_area_heal_line.render(f'{BASE_DIR}{os.sep}output{os.sep}COVID-19各地区病例趋势图(cn当日累计治愈病例).html')
+
+    cn_area_dead_line = get_figure.area_line(label_name='累计死亡', column_name='dead')
+    cn_area_dead_line.render(f'{BASE_DIR}{os.sep}output{os.sep}COVID-19各地区病例趋势图(cn当日累计死亡病例).html')
 if __name__ == '__main__':
     main()
     

@@ -1,5 +1,9 @@
 ## COVID-19 Data visualization
 
+![GIF-map-demo.gif](https://i.loli.net/2020/03/24/sKlU51hgfe3vHcP.gif)
+
+![GIF-line-demo.gif](https://i.loli.net/2020/03/24/AZt31oXKn6Dk8WE.gif)
+
 ### 项目简介
 
 通过现有的新型冠状病毒的数据，生成数据可视化展示图。
@@ -54,3 +58,12 @@ pip install -r requirements.txt
 
 项目所用的数据来源于丁香园网站发布的数据，如果需要，请查看该项目[DXY-COVID-19-Data]( https://github.com/BlankerL/DXY-COVID-19-Data )
 
+### 生成图表
+
+激活项目的虚拟环境后，切换目录至**`COVID19/core/`**，执行以下命令
+
+```bash
+python run.py
+```
+
+生成图表，在**`COVID19/output`**目录下可查看结果。

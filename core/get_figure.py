@@ -8,7 +8,7 @@
 @Desc:
 """
 import os
-from pyecharts.charts import Map, Timeline
+from pyecharts.charts import Map, Timeline, Line
 from pyecharts import options as opts
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 from core import get_df
@@ -21,13 +21,12 @@ def province_map(label_name, column_name):
     :param column_name: string
     :return:
     """
-    city_data = get_df.get_df_city()
     df_province = get_df.get_df_province()
     # 初始化图像大小
     tl = Timeline(init_opts=opts.InitOpts(width='1500px', height='700px'))
     # 设置播放速度
     tl.add_schema(play_interval=1000)
-    for target_date in city_data['date'].unique():
+    for target_date in df_province['date'].unique():
         confirm_map = Map()
         df_day_province = df_province[df_province['date'] == target_date]
         map_data_ls = [list(z) for z in zip(df_day_province['province'], df_day_province[column_name])]
@@ -54,6 +53,25 @@ def province_map(label_name, column_name):
     
         tl.add(confirm_map, target_date)
     return tl
+
+
+def area_line(label_name, column_name):
+    df_cn_area_all = get_df.get_df_cn_area_all(column_name)
+    dates = df_cn_area_all.index.tolist()
+    global_setting = dict(datazoom_opts=[opts.DataZoomOpts(type_='inside'), opts.DataZoomOpts()],
+                          legend_opts=opts.LegendOpts(pos_top='3%'),
+                          yaxis_opts=opts.AxisOpts(axislabel_opts=opts.LabelOpts(formatter="{value} 人"),
+                                                   splitline_opts=opts.SplitLineOpts(is_show=True)),
+                          xaxis_opts=opts.AxisOpts(axislabel_opts=opts.LabelOpts(rotate=60)),
+                          tooltip_opts=opts.TooltipOpts(axis_pointer_type='cross'))
+
+    line = Line(init_opts=opts.InitOpts(width='1500px', height='700px'))
+    line.add_xaxis(dates)
+    for p in df_cn_area_all.columns:
+        line.add_yaxis(p, df_cn_area_all[p], label_opts=opts.LabelOpts(is_show=False), is_selected=False)
+    line.set_global_opts(title_opts=opts.TitleOpts(title=f"Line-全国{label_name}病例趋势by_province"),
+                         **global_setting)
+    return line
 
 
 if __name__ == '__main__':
