@@ -1,5 +1,7 @@
 ## COVID-19 Data visualization
 
+![Python Version](https://img.shields.io/badge/Python-3.6%2B-blue?style=plastic)![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/seeker0720/COVID-19-Data-visualization?style=plastic)![GitHub last commit (branch)](https://img.shields.io/github/last-commit/seeker0720/COVID-19-Data-visualization/master?style=plastic)![GitHub stars](https://img.shields.io/github/stars/seeker0720/COVID-19-Data-visualization?style=plastic)![GitHub repo size](https://img.shields.io/github/repo-size/seeker0720/COVID-19-Data-visualization?style=plastic)![GitHub](https://img.shields.io/github/license/seeker0720/COVID-19-Data-visualization?style=plastic)
+
 ![GIF-map-demo.gif](https://i.loli.net/2020/03/24/sKlU51hgfe3vHcP.gif)
 
 ![GIF-line-demo.gif](https://i.loli.net/2020/03/24/AZt31oXKn6Dk8WE.gif)
