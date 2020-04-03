@@ -8,7 +8,7 @@
 @Desc:
 """
 import os
-from pyecharts.charts import Map, Timeline, Line
+from pyecharts.charts import Map, Timeline, Line, Tab
 from pyecharts import options as opts
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 from core import get_df
@@ -56,8 +56,8 @@ def province_map(label_name, column_name):
 
 
 def area_line(label_name, column_name):
-    df_cn_area_all = get_df.get_df_cn_area_all(column_name)
-    dates = df_cn_area_all.index.tolist()
+    df_cn_area_all = get_df.get_df_cn_area()[column_name]
+    dates = df_cn_area_all.index.map(lambda x:x[5:]).tolist()
     global_setting = dict(datazoom_opts=[opts.DataZoomOpts(type_='inside'), opts.DataZoomOpts()],
                           legend_opts=opts.LegendOpts(pos_top='3%'),
                           yaxis_opts=opts.AxisOpts(axislabel_opts=opts.LabelOpts(formatter="{value} 人"),
@@ -72,6 +72,22 @@ def area_line(label_name, column_name):
     line.set_global_opts(title_opts=opts.TitleOpts(title=f"Line-全国{label_name}病例趋势by_province"),
                          **global_setting)
     return line
+
+
+def get_figure_area_all():
+    tab_area = Tab(page_title='Line-Area')
+    tab_area.add(area_line(label_name='累计确诊', column_name='confirm'), 'COVID-19各地区病例趋势图(cn当日累计确诊病例)')
+    tab_area.add(area_line(label_name='现有确诊', column_name='now_confirm'), 'COVID-19各地区病例趋势图(cn当日现有确诊病例)')
+    tab_area.add(area_line(label_name='累计治愈', column_name='heal'), 'COVID-19各地区病例趋势图(cn当日累计病例)')
+    tab_area.add(area_line(label_name='累计死亡', column_name='dead'), 'COVID-19各地区病例趋势图(cn当日累计死亡病例)')
+    return tab_area
+
+
+def get_figure_map_all():
+    tab_map = Tab(page_title='Map-Area')
+    tab_map.add(province_map(label_name='现有确诊', column_name='now_confirm'), 'COVID-19疫情动态图(cn当日现有确诊病例数)')
+    tab_map.add(province_map(label_name='累计确诊', column_name='confirm'), 'COVID-19疫情动态图(cn当日累计确诊病例数)')
+    return tab_map
 
 
 if __name__ == '__main__':

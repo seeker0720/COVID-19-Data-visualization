@@ -1,6 +1,7 @@
 env/
 output/
 update_data.py
-!COVID-19疫情动态图(cn当日累计确诊病例数)DEMO.html
-!COVID-19疫情动态图(cn当日现有确诊病例数)DEMO.html
+!*Demo.html
+__pycahe__/
+*.pyc
 
