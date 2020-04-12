@@ -81,7 +81,7 @@ def area_line(label_name, column_name):
 
 def gird_chart(column, label,target_date, df_city, df_province, df_cn, min_num, max_num):
     chart_df = df_province[df_province['date'] == target_date].sort_values(by=column, ascending=False)
-    map_data = [list(z) for z in zip(chart_df['province'], chart_df['confirm'])]
+    map_data = [list(z) for z in zip(chart_df['province'], chart_df[column])]
     time_list = df_cn['date'].tolist()
     total_num = df_cn[column].tolist()
     
@@ -206,7 +206,7 @@ def gird_chart(column, label,target_date, df_city, df_province, df_cn, min_num, 
     #     pie_data = [[x[0], x[1]] for x in map_data if x[0] != '湖北']
     pie_data = [
         ['武汉', sum(df_city[(df_city['date'] == target_date) & (df_city['city'] == '武汉')][column])],
-        ['HB非武汉', (sum(chart_df[chart_df['province'] == '湖北']['confirm']) - sum(
+        ['HB非武汉', (sum(chart_df[chart_df['province'] == '湖北'][column]) - sum(
             df_city[(df_city['date'] == target_date) & (df_city['city'] == '武汉')][column]))],
         ['非湖北', sum(chart_df[chart_df['province'] != '湖北'][column])]
     ]
@@ -281,6 +281,7 @@ def get_grid_timeline(column, label, df_city, df_province, df_cn, min_num, max_n
     )
     return timeline
 
+
 def get_figure_area_all():
     tab_area = Tab(page_title='Line-Area')
     tab_area.add(area_line(label_name='累计确诊', column_name='confirm'),
@@ -311,6 +312,17 @@ def get_grid_timeline_confirm():
                                  df_cn=get_df.get_df_cn(df=get_df.get_dff_city()),
                                  min_num=1,
                                  max_num=1600)
+    return timeline
+
+
+def get_grid_timeline_now_confirm():
+    timeline = get_grid_timeline(column='now_confirm',
+                                 label='现有确诊',
+                                 df_city=get_df.get_dff_city(),
+                                 df_province=get_df.get_df_province(dff=get_df.get_dff_city()),
+                                 df_cn=get_df.get_df_cn(df=get_df.get_dff_city()),
+                                 min_num=-30,
+                                 max_num=1000)
     return timeline
 
 

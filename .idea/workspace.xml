@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef7391c5-fd3b-4b04-8b84-781a01269308" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/output/新型冠状病毒数据可视化(China)Demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/疫情动态地图Demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/疫情动态趋势图Demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/get_figure.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/get_figure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,21 +17,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+            <state relative-caret-position="999">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="e#106#115#0" expanded="true" />
-                <element signature="e#578#667#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -50,13 +47,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/get_figure.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2926">
-              <caret line="157" column="84" selection-start-line="157" selection-start-column="84" selection-end-line="157" selection-end-column="84" />
+            <state relative-caret-position="203">
+              <caret line="210" column="64" selection-start-line="210" selection-start-column="64" selection-end-line="210" selection-end-column="64" />
               <folding>
                 <element signature="e#113#122#0" expanded="true" />
+                <element signature="e#415#2508#0" />
+                <element signature="e#2555#3667#0" />
+                <element signature="e#9937#10882#0" />
+                <element signature="e#10915#11447#0" />
+                <element signature="e#11480#11775#0" />
               </folding>
             </state>
           </provider>
@@ -102,9 +104,9 @@
         <option value="$PROJECT_DIR$/output/aa.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/core/get_df.py" />
-        <option value="$PROJECT_DIR$/core/get_figure.py" />
-        <option value="$PROJECT_DIR$/core/run.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/core/run.py" />
+        <option value="$PROJECT_DIR$/core/get_figure.py" />
       </list>
     </option>
   </component>
@@ -323,7 +325,7 @@
       <workItem from="1585924541887" duration="5925000" />
       <workItem from="1586082404028" duration="1936000" />
       <workItem from="1586685675278" duration="9553000" />
-      <workItem from="1586695754956" duration="620000" />
+      <workItem from="1586695754956" duration="3902000" />
     </task>
     <task id="LOCAL-00001" summary="1.cn的确诊病例疫情地图完成">
       <created>1584801038088</created>
@@ -395,11 +397,25 @@
       <option name="project" value="LOCAL" />
       <updated>1586696044405</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1.修复output中无Demo演示文件的Bug">
+      <created>1586696463921</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586696463921</updated>
+    </task>
+    <task id="LOCAL-00012" summary="1.优化程序运行时间">
+      <created>1586698277871</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586698277871</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58987000" />
+    <option name="totallyTimeSpent" value="62269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -409,15 +425,15 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3282123" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41061452" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.41061452" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.33798882" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" visible="true" weight="0.33798882" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" visible="true" weight="0.33798882" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.26955307" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.51536316" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -481,11 +497,13 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="1.优化 get_df 中的函数&#10;2.同类型的输出图表整合到一个页面&#10;3.update data 04-03" />
     <MESSAGE value="1.添加新的图表，详见output目录下的demo演示&#10;2.更新数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.添加新的图表，详见output目录下的demo演示&#10;2.更新数据" />
+    <MESSAGE value="1.修复output中无Demo演示文件的Bug" />
+    <MESSAGE value="1.优化程序运行时间" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.优化程序运行时间" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/COVID19$get_df.coverage" NAME="get_df Coverage Results" MODIFIED="1586690651895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
-    <SUITE FILE_PATH="coverage/COVID19$run.coverage" NAME="run Coverage Results" MODIFIED="1586693722644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/COVID19$run.coverage" NAME="run Coverage Results" MODIFIED="1586699049177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/output/now_confirm_map_cn.html" />
@@ -551,17 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding>
-            <element signature="e#106#115#0" expanded="true" />
-            <element signature="e#578#667#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/csv/city_day_data_byDXY.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -569,16 +576,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="625347">
           <caret line="32913" selection-start-line="32913" selection-end-line="32913" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/get_figure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="157" column="84" selection-start-line="157" selection-start-column="84" selection-end-line="157" selection-end-column="84" />
-          <folding>
-            <element signature="e#113#122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -595,7 +592,32 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#106#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/get_figure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="210" column="64" selection-start-line="210" selection-start-column="64" selection-end-line="210" selection-end-column="64" />
+          <folding>
+            <element signature="e#113#122#0" expanded="true" />
+            <element signature="e#415#2508#0" />
+            <element signature="e#2555#3667#0" />
+            <element signature="e#9937#10882#0" />
+            <element signature="e#10915#11447#0" />
+            <element signature="e#11480#11775#0" />
+          </folding>
         </state>
       </provider>
     </entry>
