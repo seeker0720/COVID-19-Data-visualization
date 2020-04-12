@@ -53,8 +53,9 @@ def main():
     line_all = get_figure.get_figure_area_all()
     line_all.render(f'{BASE_DIR}{os.sep}output{os.sep}疫情动态趋势图.html')
     
-    timeline = get_figure.get_grid_timeline()
+    timeline = get_figure.get_grid_timeline_confirm()
     timeline.render(f'{BASE_DIR}{os.sep}output{os.sep}新型冠状病毒数据可视化（China）.html')
+    
+    
 if __name__ == '__main__':
     main()
-    

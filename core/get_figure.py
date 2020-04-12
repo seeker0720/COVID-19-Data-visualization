@@ -250,19 +250,21 @@ def gird_chart(column, label,target_date, df_city, df_province, df_cn, min_num, 
     return grid_chart
 
 
-def get_grid_timeline():
+def get_grid_timeline(column, label, df_city, df_province, df_cn, min_num, max_num):
     pass
     timeline = Timeline(
         init_opts=opts.InitOpts(width="1500px", height="850px", theme=ThemeType.DARK)
     )
     time_list = get_df.get_dff_city()['date'].unique().tolist()
     for y in time_list:
-        g = gird_chart(column='confirm',
-                       label='累计确诊',
+        g = gird_chart(column=column,
+                       label=label,
                        target_date=y,
-                       df_city=get_df.get_dff_city(),
-                       df_province=get_df.get_df_province(dff=get_df.get_dff_city()),
-                       df_cn=get_df.get_df_cn(df=get_df.get_dff_city()), min_num=1, max_num=1600)
+                       df_city=df_city,
+                       df_province=df_province,
+                       df_cn=df_cn,
+                       min_num=min_num,
+                       max_num=max_num)
         timeline.add(g, time_point=str(y))
 
     timeline.add_schema(
@@ -301,9 +303,26 @@ def get_figure_map_all():
     return tab_map
 
 
+def get_grid_timeline_confirm():
+    timeline = get_grid_timeline(column='confirm',
+                                 label='累计确诊',
+                                 df_city=get_df.get_dff_city(),
+                                 df_province=get_df.get_df_province(dff=get_df.get_dff_city()),
+                                 df_cn=get_df.get_df_cn(df=get_df.get_dff_city()),
+                                 min_num=1,
+                                 max_num=1600)
+    return timeline
+
+
 if __name__ == '__main__':
     pass
 
-    timeline = get_grid_timeline()
-    timeline.render(f"{BASE_DIR}\\output\\新型冠状病毒数据可视化（China）.html")
-    print('ok')
+    # timeline = get_grid_timeline(column='confirm',
+    #                              label='累计确诊',
+    #                              df_city=get_df.get_dff_city(),
+    #                              df_province=get_df.get_df_province(dff=get_df.get_dff_city()),
+    #                              df_cn=get_df.get_df_cn(df=get_df.get_dff_city()),
+    #                              min_num=1,
+    #                              max_num=1600)
+    # timeline.render(f"{BASE_DIR}\\output\\新型冠状病毒数据可视化（China）.html")
+    # print('ok')
