@@ -19,8 +19,16 @@ def get_df_city():
     
     :return: pandas` DataFrame object
     """
-    return pd.read_csv(data_file)
+    df_city = pd.read_csv(data_file)
+    df_city['now_confirm'] = df_city['confirm'] - df_city['heal'] - df_city['dead']
+    return df_city
 
+
+def get_dff_city():
+    dff_city = get_df_city()
+    dff_city['date'] = get_df_city()['date'].apply(lambda x: x[5:])
+    return dff_city
+    
 
 def get_df_day_province(target_date, df):
     """
@@ -31,22 +39,37 @@ def get_df_day_province(target_date, df):
     """
     df_city = df
     df_day_city = df_city[df_city['date'] == target_date]
-    df_day_province = df_day_city.groupby('province')[['confirm', 'suspect', 'heal', 'dead']].sum()
+    df_day_province = df_day_city.groupby('province')[['confirm',
+                                                       'now_confirm',
+                                                       'suspect',
+                                                       'heal',
+                                                       'dead']].sum()
     df_day_province['date'] = target_date
     return df_day_province
 
 
-def get_df_province():
+def get_df_province(dff=get_df_city()):
     """
     
     :return: pandas` DataFrame object
     """
-    df_city = get_df_city()
+    df_city = dff
     date_ls = df_city['date'].unique().tolist()
     df_day_province_ls = [get_df_day_province(target_date=d, df=df_city) for d in date_ls]
     df_province = pd.concat(df_day_province_ls).reset_index()
-    df_province['now_confirm'] = df_province['confirm'] - df_province['heal'] - df_province['dead']
     return df_province
+
+
+def get_df_cn(df):
+    df_city = df
+    df_cn = df_city.groupby('date')[['confirm',
+                                     'now_confirm',
+                                     'suspect',
+                                     'heal',
+                                     'dead']].sum()
+    # df_cn['date'] = df_cn.index
+    return df_cn.reset_index()
+    pass
 
 
 def get_df_cn_area():
@@ -87,6 +110,6 @@ def get_figure_all():
 
 if __name__ == '__main__':
     # print(get_df_cn_area_all(column_name='confirm'))
-    print(get_df_province())
-    print(get_df_cn_area())
-    
+    # print(get_df_province(dff=get_dff_city()))
+    # print(get_df_cn_area())
+    print(get_df_cn(df=get_dff_city()))
