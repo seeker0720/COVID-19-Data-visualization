@@ -79,7 +79,7 @@ def area_line(label_name, column_name):
     return line
 
 
-def gird_chart(column, label,target_date, df_city, df_province, df_cn, min_num, max_num):
+def gird_chart(column, label,target_date, df_city, df_province, df_cn, min_num, max_num, range_color):
     chart_df = df_province[df_province['date'] == target_date].sort_values(by=column, ascending=False)
     map_data = [list(z) for z in zip(chart_df['province'], chart_df[column])]
     time_list = df_cn['date'].tolist()
@@ -139,7 +139,7 @@ def gird_chart(column, label,target_date, df_city, df_province, df_cn, min_num, 
                 pos_top="top",
                 range_text=["High", "Low"],
                 #                 range_color=["white", "yellow","red"],
-                range_color=['#FFFFFF', '#FDEBCF', '#F59E83', '#E55A4E', '#CB2A2F', '#811C24', '#4F070D'],
+                range_color=range_color,
                 textstyle_opts=opts.TextStyleOpts(color="#ddd"),
                 min_=min_data,
                 max_=max_data,
@@ -183,8 +183,8 @@ def gird_chart(column, label,target_date, df_city, df_province, df_cn, min_num, 
             .reversal_axis()
             .set_global_opts(
             legend_opts=opts.LegendOpts(pos_left="27%", pos_top='15%'),
-            xaxis_opts=opts.AxisOpts(
-                axislabel_opts=opts.LabelOpts(is_show=False)
+            xaxis_opts=opts.AxisOpts(max_=max_num,
+                                     axislabel_opts=opts.LabelOpts(is_show=False)
             ),
             yaxis_opts=opts.AxisOpts(axislabel_opts=opts.LabelOpts(is_show=False)),
             tooltip_opts=opts.TooltipOpts(is_show=False),
@@ -195,7 +195,7 @@ def gird_chart(column, label,target_date, df_city, df_province, df_cn, min_num, 
                 pos_top="top",
                 range_text=["High", "Low"],
                 #                 range_color=["white", "yellow","red"],
-                range_color=['#FDEBCF', '#F59E83', '#E55A4E', '#CB2A2F', '#811C24', '#4F070D'],
+                range_color=range_color,
                 textstyle_opts=opts.TextStyleOpts(color="#ddd"),
                 min_=min_data,
                 max_=max_data,
@@ -250,12 +250,12 @@ def gird_chart(column, label,target_date, df_city, df_province, df_cn, min_num, 
     return grid_chart
 
 
-def get_grid_timeline(column, label, df_city, df_province, df_cn, min_num, max_num):
+def get_grid_timeline(column, label, df_city, df_province, df_cn, min_num, max_num, range_color):
     pass
     timeline = Timeline(
         init_opts=opts.InitOpts(width="1500px", height="850px", theme=ThemeType.DARK)
     )
-    time_list = get_df.get_dff_city()['date'].unique().tolist()
+    time_list = df_city['date'].unique().tolist()
     for y in time_list:
         g = gird_chart(column=column,
                        label=label,
@@ -264,7 +264,8 @@ def get_grid_timeline(column, label, df_city, df_province, df_cn, min_num, max_n
                        df_province=df_province,
                        df_cn=df_cn,
                        min_num=min_num,
-                       max_num=max_num)
+                       max_num=max_num,
+                       range_color=range_color)
         timeline.add(g, time_point=str(y))
 
     timeline.add_schema(
@@ -277,7 +278,7 @@ def get_grid_timeline(column, label, df_city, df_province, df_cn, min_num, max_n
         pos_top="20",
         pos_bottom="20",
         width="60",
-        label_opts=opts.LabelOpts(is_show=True, color="#fff"),
+        label_opts=opts.LabelOpts(is_show=False, color="#fff"),
     )
     return timeline
 
@@ -311,7 +312,13 @@ def get_grid_timeline_confirm():
                                  df_province=get_df.get_df_province(dff=get_df.get_dff_city()),
                                  df_cn=get_df.get_df_cn(df=get_df.get_dff_city()),
                                  min_num=1,
-                                 max_num=1600)
+                                 max_num=1600,
+                                 range_color=['#FDEBCF',
+                                              '#F59E83',
+                                              '#E55A4E',
+                                              '#CB2A2F',
+                                              '#811C24',
+                                              '#4F070D'])
     return timeline
 
 
@@ -322,10 +329,27 @@ def get_grid_timeline_now_confirm():
                                  df_province=get_df.get_df_province(dff=get_df.get_dff_city()),
                                  df_cn=get_df.get_df_cn(df=get_df.get_dff_city()),
                                  min_num=-30,
-                                 max_num=1000)
+                                 max_num=1000,
+                                 range_color=['#FFFFFF',
+                                              '#FDEBCF',
+                                              '#F59E83',
+                                              '#E55A4E',
+                                              '#CB2A2F',
+                                              '#811C24',
+                                              '#4F070D'])
     return timeline
 
 
+def get_grid_timeline_heal():
+    timeline = get_grid_timeline(column='heal',
+                                 label='累计治愈',
+                                 df_city=get_df.get_dff_city(),
+                                 df_province=get_df.get_df_province(dff=get_df.get_dff_city()),
+                                 df_cn=get_df.get_df_cn(df=get_df.get_dff_city()),
+                                 min_num=-30,
+                                 max_num=1600,
+                                 range_color=["#88CFF6", "#FEFF02", "#42B983"])
+    return timeline
 if __name__ == '__main__':
     pass
 

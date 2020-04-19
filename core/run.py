@@ -54,10 +54,13 @@ def main():
     line_all.render(f'{BASE_DIR}{os.sep}output{os.sep}疫情动态趋势图.html')
     
     timeline_confirm = get_figure.get_grid_timeline_confirm()
-    timeline_confirm.render(f'{BASE_DIR}{os.sep}output{os.sep}新型冠状病毒数据可视化（China）.html')
+    timeline_confirm.render(f'{BASE_DIR}{os.sep}output{os.sep}新型冠状病毒数据可视化-confirm（China）.html')
 
     timeline_now_confirm = get_figure.get_grid_timeline_now_confirm()
-    timeline_now_confirm.render(f'{BASE_DIR}{os.sep}output{os.sep}新型冠状病毒数据可视化2（China）.html')
+    timeline_now_confirm.render(f'{BASE_DIR}{os.sep}output{os.sep}新型冠状病毒数据可视化-2now_confirm（China）.html')
+
+    timeline_heal = get_figure.get_grid_timeline_heal()
+    timeline_heal.render(f'{BASE_DIR}{os.sep}output{os.sep}新型冠状病毒数据可视化3-heal（China）.html')
     
     
 if __name__ == '__main__':
