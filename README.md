@@ -2,11 +2,21 @@
 
 ![Python Version](https://img.shields.io/badge/Python-3.6%2B-blue?style=plastic)  ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/seeker0720/COVID-19-Data-visualization?style=plastic)  ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/seeker0720/COVID-19-Data-visualization/master?style=plastic)  ![GitHub stars](https://img.shields.io/github/stars/seeker0720/COVID-19-Data-visualization?style=plastic)  ![GitHub repo size](https://img.shields.io/github/repo-size/seeker0720/COVID-19-Data-visualization?style=plastic)  ![GitHub](https://img.shields.io/github/license/seeker0720/COVID-19-Data-visualization?style=plastic)
 
+- 全国疫情组合图
+
 ![COVID-19-Grid.gif](https://i.loli.net/2020/04/12/9ZuxspvHbQC72e5.gif)
+
+- 全国疫情地图
 
 ![GIF-map-demo.gif](https://i.loli.net/2020/03/24/sKlU51hgfe3vHcP.gif)
 
+- 全国分地区疫情趋势图
+
 ![GIF-line-demo.gif](https://i.loli.net/2020/03/24/AZt31oXKn6Dk8WE.gif)
+
+- 世界疫情地图
+
+![world_map.gif](https://i.loli.net/2020/04/23/DjkcsBtwCEzZXKu.gif)
 
 ### 项目简介
 
@@ -47,6 +57,7 @@ pip install -r requirements.txt
         - csv/
             - city_day_data_byDXY.csv
         - json/
+    - JupyterNoteboolFile/(用于生成世界疫情地图)
     - output/（输出的可视化文件目录）
         - *.html
     - README.md
@@ -64,10 +75,17 @@ pip install -r requirements.txt
 
 ### 生成图表
 
+#### 生成中国疫情相关图表
+
 激活项目的虚拟环境后，切换目录至**`COVID19/core/`**，执行以下命令
 
 ```bash
 python run.py
 ```
 
-生成图表，在**`COVID19/output`**目录下可查看结果。
+生成图表，在**`COVID19/output`**目录下可查看有关国内疫情的图表。
+
+#### 生成世界疫情相关图表
+
+因为生成世界疫情图表所使用的[数据来源]( https://github.com/BlankerL/DXY-COVID-19-Data )有些不同，需要进行较多的数据清洗，故使用Jupyter文档的方式生成，在生成世界疫情图表时，确保已安装可以运行Jupyter文档的环境（建议直接安装Anaconda），直接执行 **JupyterNotebookFile** 目录下的**LTS_DXYArea.ipynb** 文件即可。
+
