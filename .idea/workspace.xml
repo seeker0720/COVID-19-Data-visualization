@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef7391c5-fd3b-4b04-8b84-781a01269308" name="Default Changelist" comment="">
+    <list default="true" id="ef7391c5-fd3b-4b04-8b84-781a01269308" name="Default Changelist" comment="1.更新世界疫情图表&#10;2.update data">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/世界现有确诊病例前20国趋势线.html" beforeDir="false" afterPath="$PROJECT_DIR$/JupytertNotebookFile/世界现有确诊病例前20国趋势线.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/世界疫情地图.html" beforeDir="false" afterPath="$PROJECT_DIR$/JupytertNotebookFile/世界疫情地图.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/csv/city_day_data_byDXY.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/csv/city_day_data_byDXY.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+            <state relative-caret-position="295">
+              <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
               <folding>
                 <element signature="e#106#115#0" expanded="true" />
               </folding>
@@ -94,7 +96,7 @@
             <path>
               <item name="COVID19" type="b2602c69:ProjectViewProjectNode" />
               <item name="COVID19" type="462c0819:PsiDirectoryNode" />
-              <item name="JupytertNotebookFile" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,7 +280,9 @@
       <workItem from="1587555189800" duration="2072000" />
       <workItem from="1587639461192" duration="4009000" />
       <workItem from="1588426763409" duration="454000" />
-      <workItem from="1590586461679" duration="808000" />
+      <workItem from="1590586461679" duration="3110000" />
+      <workItem from="1590676056481" duration="688000" />
+      <workItem from="1591088977062" duration="288000" />
     </task>
     <task id="LOCAL-00001" summary="1.cn的确诊病例疫情地图完成">
       <created>1584801038088</created>
@@ -378,31 +382,37 @@
       <option name="project" value="LOCAL" />
       <updated>1587651243383</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1.更新世界疫情图表&#10;2.update data">
+      <created>1590587552662</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1590587552662</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75436000" />
+    <option name="totallyTimeSpent" value="78714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2749196" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28068304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3282123" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.41061452" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.40989012" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" weight="0.33736265" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" visible="true" weight="0.33728448" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.3114525" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.4956044" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.49462366" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.51536316" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -470,11 +480,12 @@
     <MESSAGE value="1.优化程序运行时间" />
     <MESSAGE value="1.新增关于现有确诊的图表" />
     <MESSAGE value="1.新增关于生成世界疫情图表的模块&#10;2.update requirements.txt&#10;3.update data&#10;4.update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.新增关于生成世界疫情图表的模块&#10;2.update requirements.txt&#10;3.update data&#10;4.update README.md" />
+    <MESSAGE value="1.更新世界疫情图表&#10;2.update data" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.更新世界疫情图表&#10;2.update data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/COVID19$get_df.coverage" NAME="get_df Coverage Results" MODIFIED="1586690651895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
-    <SUITE FILE_PATH="coverage/COVID19$run.coverage" NAME="run Coverage Results" MODIFIED="1587215154135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/COVID19$run.coverage" NAME="run Coverage Results" MODIFIED="1590587761096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/output/now_confirm_map_cn.html" />
@@ -576,16 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/get_df.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1491">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JupytertNotebookFile/世界疫情地图.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -595,10 +596,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        <state relative-caret-position="295">
+          <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
           <folding>
             <element signature="e#106#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/get_df.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1491">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="e#109#118#0" expanded="true" />
           </folding>
         </state>
       </provider>
