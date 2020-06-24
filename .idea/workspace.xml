@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
+    <expand />
+    <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin2" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7391c5-fd3b-4b04-8b84-781a01269308" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="ef7391c5-fd3b-4b04-8b84-781a01269308" name="Default Changelist" comment="1.更新世界疫情图表-20200614&#10;2.update data-20200614">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/世界现有确诊病例前20国趋势线.html" beforeDir="false" afterPath="$PROJECT_DIR$/JupytertNotebookFile/世界现有确诊病例前20国趋势线.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/世界疫情地图.html" beforeDir="false" afterPath="$PROJECT_DIR$/JupytertNotebookFile/世界疫情地图.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/csv/city_day_data_byDXY.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/csv/city_day_data_byDXY.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +36,6 @@
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="398" />
-    <option name="height" value="1343" />
   </component>
   <component name="ProjectId" id="1dDqXcPMKL3gd9onFj9zB21yzf5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -356,20 +332,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591969338929</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1.更新世界疫情图表-20200614&#10;2.update data-20200614">
+      <created>1592112303527</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1592112303527</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="85591000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -380,6 +354,11 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
               <option name="BEK_SORT_TYPE" value="1" />
             </State>
           </value>
@@ -417,7 +396,8 @@
     <MESSAGE value="1.新增关于生成世界疫情图表的模块&#10;2.update requirements.txt&#10;3.update data&#10;4.update README.md" />
     <MESSAGE value="1.更新世界疫情图表&#10;2.update data" />
     <MESSAGE value="1.更新世界疫情图表-20200612&#10;2.update data-20200612" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.更新世界疫情图表-20200612&#10;2.update data-20200612" />
+    <MESSAGE value="1.更新世界疫情图表-20200614&#10;2.update data-20200614" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.更新世界疫情图表-20200614&#10;2.update data-20200614" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2084" y="423" key="FileChooserDialogImpl" timestamp="1591970544702">
@@ -428,5 +408,9 @@
       <screen x="1920" y="0" width="768" height="1336" />
     </state>
     <state x="1920" y="312" key="SettingsEditor/0.0.1536.834/1920.0.768.1336@1920.0.768.1336" timestamp="1591970130211" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1592112588082">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.768.1336@0.0.1536.834" timestamp="1592112588082" />
   </component>
 </project>
