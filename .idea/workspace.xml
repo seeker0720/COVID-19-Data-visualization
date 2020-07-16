@@ -11,7 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef7391c5-fd3b-4b04-8b84-781a01269308" name="Default Changelist" comment="1.更新世界疫情图表-20200614&#10;2.update data-20200614">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/世界现有确诊病例前20国趋势线.html" beforeDir="false" afterPath="$PROJECT_DIR$/JupytertNotebookFile/世界现有确诊病例前20国趋势线.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/世界疫情地图.html" beforeDir="false" afterPath="$PROJECT_DIR$/JupytertNotebookFile/世界疫情地图.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/csv/city_day_data_byDXY.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/csv/city_day_data_byDXY.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -339,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592112303527</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updatedata 20200624">
+      <created>1593001142769</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1593001142769</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -397,7 +408,8 @@
     <MESSAGE value="1.更新世界疫情图表&#10;2.update data" />
     <MESSAGE value="1.更新世界疫情图表-20200612&#10;2.update data-20200612" />
     <MESSAGE value="1.更新世界疫情图表-20200614&#10;2.update data-20200614" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.更新世界疫情图表-20200614&#10;2.update data-20200614" />
+    <MESSAGE value="updatedata 20200624" />
+    <option name="LAST_COMMIT_MESSAGE" value="updatedata 20200624" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2084" y="423" key="FileChooserDialogImpl" timestamp="1591970544702">
@@ -408,9 +420,9 @@
       <screen x="1920" y="0" width="768" height="1336" />
     </state>
     <state x="1920" y="312" key="SettingsEditor/0.0.1536.834/1920.0.768.1336@1920.0.768.1336" timestamp="1591970130211" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1592112588082">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1593001169989">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.768.1336@0.0.1536.834" timestamp="1592112588082" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.768.1336@0.0.1536.834" timestamp="1593001169989" />
   </component>
 </project>
