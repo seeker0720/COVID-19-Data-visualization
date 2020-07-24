@@ -11,16 +11,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef7391c5-fd3b-4b04-8b84-781a01269308" name="Default Changelist" comment="1.更新世界疫情图表-20200614&#10;2.update data-20200614">
+      <change afterPath="$PROJECT_DIR$/All Figure.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/世界现有确诊病例前20国趋势线.html" beforeDir="false" afterPath="$PROJECT_DIR$/JupytertNotebookFile/世界现有确诊病例前20国趋势线.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/世界疫情地图.html" beforeDir="false" afterPath="$PROJECT_DIR$/JupytertNotebookFile/世界疫情地图.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/.ipynb_checkpoints/LTS_DXYArea-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterNotebookFile/.ipynb_checkpoints/LTS_DXYArea-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/DXYAreaSimple.csv" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterNotebookFile/DXYAreaSimple.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/LTS_DXYArea.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterNotebookFile/LTS_DXYArea.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/ccname.csv" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterNotebookFile/ccname.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/ccname.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterNotebookFile/ccname.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/世界现有确诊病例前20国趋势线.html" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterNotebookFile/世界现有确诊病例前20国趋势线.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JupytertNotebookFile/世界疫情地图.html" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterNotebookFile/世界疫情地图.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/csv/city_day_data_byDXY.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/csv/city_day_data_byDXY.csv" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,8 +64,30 @@
       <GitPushTagMode />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="240" />
+    <option name="y" value="130" />
+    <option name="width" value="1440" />
+    <option name="height" value="785" />
+  </component>
   <component name="ProjectId" id="1dDqXcPMKL3gd9onFj9zB21yzf5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,16 +97,31 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/update_data.py" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../webstormProject/forblog/blog_templates/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\PythonData\COVID19" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\PythonData\COVID19" />
       <recent name="G:\PythonData\COVID19\data\csv" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python.run">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -216,6 +276,9 @@
       <workItem from="1591610434377" duration="1811000" />
       <workItem from="1591969122979" duration="790000" />
       <workItem from="1591970377050" duration="146000" />
+      <workItem from="1595606975145" duration="43000" />
+      <workItem from="1595607020140" duration="50000" />
+      <workItem from="1595607071189" duration="373000" />
     </task>
     <task id="LOCAL-00001" summary="1.cn的确诊病例疫情地图完成">
       <created>1584801038088</created>
@@ -350,11 +413,45 @@
       <option name="project" value="LOCAL" />
       <updated>1593001142769</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update data 20200715">
+      <created>1594865630706</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1594865630706</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85591000" />
+    <option name="totallyTimeSpent" value="86057000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3286517" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Word Book" order="4" side_tool="true" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -365,12 +462,13 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
               <option name="BEK_SORT_TYPE" value="1" />
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
             </State>
           </value>
         </entry>
@@ -390,7 +488,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.cn的确诊病例疫情地图完成" />
@@ -409,20 +506,50 @@
     <MESSAGE value="1.更新世界疫情图表-20200612&#10;2.update data-20200612" />
     <MESSAGE value="1.更新世界疫情图表-20200614&#10;2.update data-20200614" />
     <MESSAGE value="updatedata 20200624" />
-    <option name="LAST_COMMIT_MESSAGE" value="updatedata 20200624" />
+    <MESSAGE value="update data 20200715" />
+    <option name="LAST_COMMIT_MESSAGE" value="update data 20200715" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2084" y="423" key="FileChooserDialogImpl" timestamp="1591970544702">
       <screen x="1920" y="0" width="768" height="1336" />
     </state>
     <state x="2084" y="423" key="FileChooserDialogImpl/0.0.1536.834/1920.0.768.1336@1920.0.768.1336" timestamp="1591970544702" />
+    <state width="1515" height="272" key="GridCell.Tab.0.bottom" timestamp="1595606484870">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="272" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595606484870" />
+    <state width="1515" height="272" key="GridCell.Tab.0.center" timestamp="1595606484870">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="272" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1595606484870" />
+    <state width="1515" height="272" key="GridCell.Tab.0.left" timestamp="1595606484870">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="272" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1595606484870" />
+    <state width="1515" height="272" key="GridCell.Tab.0.right" timestamp="1595606484870">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="272" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1595606484870" />
     <state x="1920" y="312" key="SettingsEditor" timestamp="1591970130211">
       <screen x="1920" y="0" width="768" height="1336" />
     </state>
     <state x="1920" y="312" key="SettingsEditor/0.0.1536.834/1920.0.768.1336@1920.0.768.1336" timestamp="1591970130211" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1593001169989">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1594865690678">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.768.1336@0.0.1536.834" timestamp="1593001169989" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1594865690678" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/JupyterNotebookFile/LTS_DXYArea.ipynb">
+      <provider selected="true" editor-type-id="jupyter-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

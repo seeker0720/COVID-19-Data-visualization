@@ -5,4 +5,5 @@ update_data.py
 __pycahe__/
 *.pyc
 *.css
+!style.css
 Title

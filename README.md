@@ -89,3 +89,7 @@ python run.py
 
 因为生成世界疫情图表所使用的[数据来源]( https://github.com/BlankerL/DXY-COVID-19-Data )有些不同，需要进行较多的数据清洗，故使用Jupyter文档的方式生成，在生成世界疫情图表时，确保已安装可以运行Jupyter文档的环境（建议直接安装Anaconda），直接执行 **JupyterNotebookFile** 目录下的**LTS_DXYArea.ipynb** 文件即可（每次推送会将该部分最新的疫情情况图表推送至远程仓库中）。
 
+### 查看所有图表
+
+项目根目录下的文件    **All figure.html**  提供了所有图表的链接，方便查看
+
